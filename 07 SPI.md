@@ -10,7 +10,7 @@ Serial Peripheral interface 缩写，顾名思义就是串行外围设备接口�
 
 ## 框图
 
-![image1](.imagines/屏幕截图 2025-04-20 154251.png)
+![image1](imagines/屏幕截图 2025-04-20 154251.png)
 
 工作原理：主机和从机都有一个串行移位寄存器；外设的写操作和读操作强同步
 
