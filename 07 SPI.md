@@ -55,7 +55,7 @@ CPHA：时钟相位（和IIC中数据传输的变化、读取不同）
 
 由于有先擦再写的特性，操作FLASH时要根据其最小扇区配置缓冲区
 
-![image-20250418212622126](C:\Users\17721\AppData\Roaming\Typora\typora-user-images\image-20250418212622126.png)
+![](imagines/image-20250418212622126.png)
 
 ### 工作时序（NM25Q128）
 
@@ -238,7 +238,13 @@ uint32_t HAL_SPI_GetError(SPI_HandleTypeDef *hspi);
   - 需要先拉低CS，写使能+20H+24位地址
   - 然后拉高CS，通过读取BSY判断扇区擦除是否完成
 
-# 操作实例
+# 配置
+
+1. 对单片机的spi参数进行配置
+2. msp配置：时钟，GPIO；**补充一点硬件映射的知识，不需要在代码中特别指定时钟引脚，要根据电气特性图配置，并注意冲突**
+3. 使能
+
+# **操作实例**
 
 ## 以 `void norflash_write()` 为例
 
