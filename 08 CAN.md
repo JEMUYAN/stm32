@@ -4,11 +4,11 @@
 
 构成：帧起始；仲裁段；控制段；数据段；CRC段；ACK段；帧结束
 
-![image-20250425162520922](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425162520922.png)
+![屏幕截图 2025-04-25 162520](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20162520.png)
 
 ### 仲裁段
 
-![image-20250425162916814](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425162916814.png)
+![屏幕截图 2025-04-25 162915](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20162915.png)
 
 - 禁止高七位为隐性电平
 - 拓展格式中用SRR代替远程请求位（RTR），其为隐性位，在拓展ID结束后还有真正的RTR位
@@ -18,7 +18,7 @@
 
 r~0~、r~1~为显性占位符
 
-![image-20250425162943711](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425162943711.png)
+![屏幕截图 2025-04-25 162942](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20162942.png)
 
 ### 数据段
 
@@ -40,15 +40,15 @@ r~0~、r~1~为显性占位符
 
 ## CAN收发流程
 
-![image-20250425164501826](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425164501826.png)
+![屏幕截图 2025-04-25 164500](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20164500.png)
 
-![image-20250425164541407](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425164541407.png)
+![屏幕截图 2025-04-25 164540](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20164540.png)
 
 接收到的报文数可以在 `CAN_RFxR` 中查询
 
 ## STM32CAN硬件框图
 
-![image-20250425163600401](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425163600401.png)
+![屏幕截图 2025-04-25 163556](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20163556.png)
 
 ### 过滤器配置
 
@@ -62,11 +62,11 @@ r~0~、r~1~为显性占位符
 
 - 两个16位过滤器：STDID[10:0]、IDE、RTR 和 EXTID[17:15]位
 
-![image-20250425164144476](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425164144476.png)
+![屏幕截图 2025-04-25 164143](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20164143.png)
 
 ### 时间特性
 
-![image-20250425164654759](C:/Users/17721/AppData/Roaming/Typora/typora-user-images/image-20250425164654759.png)
+![屏幕截图 2025-04-25 164653](imagines/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202025-04-25%20164653.png)
 
 ### 寄存器
 
